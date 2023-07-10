@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-firebase-social-media/static/css/main.154dd177.css",
+    "main.js": "/react-firebase-social-media/static/js/main.a8f8ae9b.js",
+    "index.html": "/react-firebase-social-media/index.html",
+    "main.154dd177.css.map": "/react-firebase-social-media/static/css/main.154dd177.css.map",
+    "main.a8f8ae9b.js.map": "/react-firebase-social-media/static/js/main.a8f8ae9b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.154dd177.css",
+    "static/js/main.a8f8ae9b.js"
+  ]
+}
