@@ -2,39 +2,47 @@
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
 }
-body{
-  margin: 0 0;
+
+body {
+  margin: 0;
 }
-.navBar{
+
+.navBar {
   background-color: black;
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
   align-items: center;
   height: 100px;
 }
-.linkers{
-  color:white;
+
+.linkers {
+  color: white;
   margin-right: 12px;
   font-size: 22px;
 }
-.userBar{
+
+.userBar {
   display: flex;
   justify-content: center;
-  color:white;
+  color: white;
   align-items: center;
   margin-left: 30px;
   padding-right: 20px;
 }
-.userName{
+
+.userName {
   color: rgb(0, 251, 255);
   margin-right: 5px;
   font-size: 18px;
+  font-weight: 700;
 }
-.icon{
+
+.icon {
   border-radius: 50%;
   margin-right: 12px;
 }
-.logOutBtn{
+
+.logOutBtn {
   font-size: 20px;
   background-color: rgba(14, 14, 14, 0.855);
   color: rgb(216, 42, 12);
@@ -42,75 +50,131 @@ body{
   border-radius: 24px;
   padding: 5px 7px;
   cursor: pointer;
+  font-weight: 650;
+  transition: 100ms;
+}
 
+.logOutBtn:hover {
+  background-color: rgb(254, 194, 194);
 }
-.formContainer{
-  flex-wrap: wrap;
-  border-top: 2px solid;
+
+.formContainer {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  padding:20px 20px;
+  margin-top: 30px;
+  padding: 20px;
 }
-.title{
+
+.title {
   font-size: 32px;
+  font-weight: 750;
+  margin-bottom: 20px;
 }
-textarea{
+
+textarea {
   font-size: 18px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
 }
-.submitBtn{
-  border:3px solid;
+
+.submitBtn {
+  border: 3px solid;
   background-color: rgb(29, 4, 4);
   border-radius: 50%;
   cursor: pointer;
   padding: 10px 10px;
-  font-size:20px;
+  font-size: 20px;
   color: rgb(255, 88, 188);
+  box-shadow: 2px 2px 2px rgba(19, 17, 18, 0.15);
+  transition: 100ms;
 }
-.postContainer{
-  margin-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
+
+.submitBtn:hover {
+  background-color: rgb(94, 94, 245);
+}
+
+.postContainer {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 20px;
 }
-.postCard{
+
+.postCard {
   border: 1px solid;
   margin-right: 20px;
   border-radius: 20px;
-  padding:20px 20px;
+  padding: 20px;
   margin-bottom: 20px;
+  box-shadow: 3px 3px 3px rgba(19, 17, 17, 0.3);
 }
-.content{
+
+.content {
   margin-top: 6px;
   margin-bottom: 12px;
   font-size: 20px;
+  font-weight: 100;
 }
-.iconBar{
+
+.iconBar {
   font-size: 14px;
   margin-top: 14px;
   color: rgb(40, 116, 238);
+  font-weight: 680;
 }
-.likeBtn{
-  border:1px solid black;
+
+.likeBtn {
+  border: 2px solid rgb(72, 72, 232);
   background-color: white;
   margin-left: 12px;
   border-radius: 50%;
   cursor: pointer;
   margin-right: 10px;
+  box-shadow: 2px 2px 2px rgba(19, 17, 17, 0.15);
+  transition: 100ms;
 }
-.statusBar{
+
+.likeBtn:hover {
+  background-color: rgb(94, 94, 245);
+}
+
+.statusBar {
   font-size: 12px;
-  padding:5px 5px;
+  margin-top: 20px;
+  padding: 5px 5px;
 }
-.deleteBtn{
+
+.deleteBtn {
   background-color: transparent;
-  border:1px solid red;
+  border: 2px solid red;
   border-radius: 60%;
   padding: 6px 6px;
   cursor: pointer;
-  color:rgb(216, 42, 12);
+  color: rgb(216, 42, 12);
   font-size: 14px;
+  box-shadow: 2px 2px 2px rgba(19, 17, 18, 0.15);
+  font-weight: 680;
+  transition: 100ms;
 }
 
+.deleteBtn:hover {
+  background-color: rgba(238, 79, 79, 0.5);
+}
+
+.signInBtn {
+  padding: 12px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 100ms;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.signInBtn:hover {
+  background-color: rgb(244, 84, 84);
+}

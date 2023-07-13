@@ -96,7 +96,7 @@ export const Post = (props:Props)=>{
                 <button className="likeBtn" onClick={hasUserLiked?removeLike:addLike}> 
                     {hasUserLiked? <>&#128078;</> : <>&#128077;</>} 
                 </button>
-                <button className="deleteBtn" onClick={deletePost}>delete</button>
+                {user?.uid===post.userId && <button className="deleteBtn" onClick={deletePost}>delete</button>}
             </div >
             <div className="statusBar">
                 <div>Likes: {likes?.length}</div>
