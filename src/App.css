@@ -8,7 +8,7 @@ body {
 }
 
 .navBar {
-  background-color: black;
+  background-color: grey;
   display: flex;
   justify-content: flex-end;
   align-items: center;

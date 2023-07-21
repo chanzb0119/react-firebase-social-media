@@ -1,4 +1,4 @@
-import { addDoc, collection, deleteDoc, doc, getDocs, query, where } from "firebase/firestore";
+import { addDoc, collection, deleteDoc , doc, getDocs, query, where } from "firebase/firestore";
 import { Post as PostI} from "./main";
 import { auth, db } from "../config/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
@@ -74,8 +74,14 @@ export const Post = (props:Props)=>{
 
     const deletePost = async () => {
         try {
+            const likesToDeleteQuery = query(likesRef,where("postId","==",post.id));
+            const likesToDeleteData = await getDocs(likesToDeleteQuery);
+            likesToDeleteData.forEach(async (likeDoc)=>{
+                const likeToDeleteDoc = doc(db,"likes",likeDoc.id);
+                await deleteDoc(likeToDeleteDoc);
+            });
 
-          props.onDelete(post.id);
+            props.onDelete(post.id);
         } catch(err) {
             console.log(err);
         }

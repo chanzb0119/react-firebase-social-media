@@ -1,4 +1,4 @@
-import {getDocs, collection, doc, deleteDoc } from "firebase/firestore"
+import {getDocs, collection, doc, deleteDoc, query, where } from "firebase/firestore"
 import { auth, db } from "../config/firebase";
 import { useEffect, useState } from "react";
 import { Post } from "./post";
@@ -41,7 +41,7 @@ export const Main = ()=>{
             setPostsList((prevPostsList:any) =>
             prevPostsList?.filter((post:Post) => post.id !== postId)
             );
-
+            
             const postDoc = doc(db, "posts", postId);
             await deleteDoc(postDoc);
 
